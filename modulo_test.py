@@ -7,8 +7,8 @@ def test_lee_entrenos(datos):
     
 
 def test_filtrar_por_ubicacion(datos, location):
-    print("\nLos entrenos que se realizan en ", location, " son:\n")
-    print(filtrar_por_ubicacion(datos, location))
+    print("\nLos dos primeros entrenos que se realizan en ", location, " son:\n")
+    print(filtrar_por_ubicacion(datos, location)[:2])
 
 def test_obtiene_distintos_tipos(datos):
     print("Los distintos tipos de entreno que hay son:\n", obtiene_distintos_tipos(datos))
